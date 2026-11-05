@@ -1966,6 +1966,64 @@ static void amdgpu_ttm_mmio_remap_bo_fini(struct amdgpu_device *adev)
 	adev->rmmio_remap.bo = NULL;
 }
 
+#ifdef __amd64__
+/*
+ * OpenBSD: keep the pre-OS (EFI GOP) framebuffer out of the VRAM allocator.
+ *
+ * Until the display driver does its first modeset the monitor keeps scanning
+ * out the buffer the firmware set up.  amdgpu only reserves VRAM from offset
+ * 0 for it (stolen_vga_size, from get_vbios_fb_size(), which is 0 on GMC 12,
+ * or efifb_stolen()).  If the firmware put its framebuffer elsewhere, ring
+ * buffers and firmware get placed over it during init and the screen shows
+ * noise for a few seconds (seen on an RX 9070 XT, Navi 48).  Reserve the
+ * real range, found from the efifb physical address and the VRAM BAR.
+ */
+static void
+amdgpu_ttm_reserve_efifb(struct amdgpu_device *adev)
+{
+	extern paddr_t efifb_stolen_paddr(void);
+	extern psize_t efifb_stolen(void);
+	paddr_t pa = efifb_stolen_paddr();
+	psize_t sz = efifb_stolen();
+	uint64_t off, end, covered;
+	int r;
+
+	adev->mman.efifb_memory = NULL;
+	if (adev->gmc.is_app_apu || (adev->flags & AMD_IS_APU))
+		return;
+	if (pa == 0 || sz == 0 || adev->fb_aper_size == 0)
+		return;
+	/* only if the efifb lives in this device's VRAM BAR */
+	if (pa < adev->fb_aper_offset ||
+	    pa + sz > adev->fb_aper_offset + adev->fb_aper_size)
+		return;
+
+	off = rounddown(pa - adev->fb_aper_offset, PAGE_SIZE);
+	end = roundup(pa - adev->fb_aper_offset + sz, PAGE_SIZE);
+	if (end > adev->gmc.real_vram_size)
+		return;
+
+	/* already inside the reservation at offset 0 */
+	covered = adev->mman.stolen_vga_size + adev->mman.stolen_extended_size;
+	if (end <= covered)
+		return;
+	if (off < covered)
+		off = covered;
+
+	r = amdgpu_bo_create_kernel_at(adev, off, end - off,
+	    &adev->mman.efifb_memory, NULL);
+	if (r) {
+		adev->mman.efifb_memory = NULL;
+		DRM_INFO("could not reserve EFI framebuffer at VRAM 0x%llx (%d)\n",
+		    off, r);
+		return;
+	}
+	DRM_INFO("reserved EFI framebuffer: %lluK at VRAM 0x%llx\n",
+	    (end - off) >> 10, off);
+}
+#endif
+
+
 /*
  * amdgpu_ttm_init - Init the memory management (ttm) as well as various
  * gtt/vram related fields.
@@ -2119,6 +2177,10 @@ int amdgpu_ttm_init(struct amdgpu_device *adev)
 		DRM_DEBUG_DRIVER("Skipped stolen memory reservation\n");
 	}
 
+#ifdef __amd64__
+	amdgpu_ttm_reserve_efifb(adev);
+#endif
+
 	dev_info(adev->dev, "amdgpu: %uM of VRAM memory ready\n",
 		 (unsigned int)(adev->gmc.real_vram_size / (1024 * 1024)));
 
@@ -2248,6 +2310,9 @@ void amdgpu_ttm_fini(struct amdgpu_device *adev)
 		if (adev->mman.stolen_reserved_size)
 			amdgpu_bo_free_kernel(&adev->mman.stolen_reserved_memory,
 					      NULL, NULL);
+#ifdef __amd64__
+		amdgpu_bo_free_kernel(&adev->mman.efifb_memory, NULL, NULL);
+#endif
 	}
 	amdgpu_bo_free_kernel(&adev->mman.sdma_access_bo, NULL,
 					&adev->mman.sdma_access_ptr);

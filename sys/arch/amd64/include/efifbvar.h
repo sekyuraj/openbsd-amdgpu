@@ -36,5 +36,6 @@ int efifb_cb_found(void);
 int efifb_cb_cnattach(void);
 
 psize_t efifb_stolen(void);
+paddr_t efifb_stolen_paddr(void);
 
 #endif /* _MACHINE_EFIFB_H_ */

@@ -585,6 +585,13 @@ efifb_stolen(void)
 	return fb->psize;
 }
 
+/* physical address of the pre-OS framebuffer, kept after efifb_detach() */
+paddr_t
+efifb_stolen_paddr(void)
+{
+	return efifb_console.paddr;
+}
+
 vaddr_t
 efifb_early_map(paddr_t pa)
 {
