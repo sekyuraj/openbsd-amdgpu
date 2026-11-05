@@ -1,0 +1,9 @@
+D/inc////
+D/smu11////
+D/smu12////
+D/smu13////
+D/smu14////
+/amdgpu_smu.c/1.30/Mon Sep 28 15:25:08 2026//TOPENBSD_8_0
+/smu_cmn.c/1.9/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_cmn.h/1.7/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_internal.h/1.6/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0

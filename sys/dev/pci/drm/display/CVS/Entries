@@ -1,0 +1,17 @@
+/drm_display_helper_mod.c/1.1/Sun Jan  1 01:34:54 2023//TOPENBSD_8_0
+/drm_dp_aux_dev.c/1.2/Tue Jan 16 23:38:08 2024//TOPENBSD_8_0
+/drm_dp_dual_mode_helper.c/1.4/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/drm_dp_helper.c/1.10/Mon Sep 28 15:25:08 2026//TOPENBSD_8_0
+/drm_dp_helper_internal.h/1.2/Fri Feb  7 03:03:28 2025//TOPENBSD_8_0
+/drm_dp_mst_topology.c/1.25/Mon Sep 28 15:25:08 2026//TOPENBSD_8_0
+/drm_dp_mst_topology_internal.h/1.1/Sun Jan  1 01:34:54 2023//TOPENBSD_8_0
+/drm_dp_tunnel.c/1.2/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/drm_dsc_helper.c/1.4/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/drm_hdcp_helper.c/1.1/Sun Jan  1 01:34:54 2023//TOPENBSD_8_0
+/drm_hdmi_audio_helper.c/1.1/Mon Mar  9 23:58:01 2026//TOPENBSD_8_0
+/drm_hdmi_cec_helper.c/1.1/Mon Mar  9 23:58:01 2026//TOPENBSD_8_0
+/drm_hdmi_cec_notifier_helper.c/1.1/Mon Mar  9 23:58:01 2026//TOPENBSD_8_0
+/drm_hdmi_helper.c/1.4/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/drm_hdmi_state_helper.c/1.4/Mon Sep 28 15:25:08 2026//TOPENBSD_8_0
+/drm_scdc_helper.c/1.3/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+D

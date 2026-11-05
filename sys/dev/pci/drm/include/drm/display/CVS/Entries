@@ -1,0 +1,16 @@
+/drm_dp.h/1.9/Thu Apr 16 18:25:09 2026//TOPENBSD_8_0
+/drm_dp_dual_mode_helper.h/1.2/Thu Apr 16 18:25:09 2026//TOPENBSD_8_0
+/drm_dp_helper.h/1.6/Thu Apr 16 18:25:09 2026//TOPENBSD_8_0
+/drm_dp_mst_helper.h/1.10/Thu Apr 16 18:25:09 2026//TOPENBSD_8_0
+/drm_dp_tunnel.h/1.1/Fri Feb  7 03:03:31 2025//TOPENBSD_8_0
+/drm_dsc.h/1.2/Fri Feb  7 03:03:31 2025//TOPENBSD_8_0
+/drm_dsc_helper.h/1.3/Fri Feb  7 03:03:31 2025//TOPENBSD_8_0
+/drm_hdcp.h/1.1/Sun Jan  1 01:34:58 2023//TOPENBSD_8_0
+/drm_hdcp_helper.h/1.1/Sun Jan  1 01:34:58 2023//TOPENBSD_8_0
+/drm_hdmi_audio_helper.h/1.1/Mon Mar  9 23:58:03 2026//TOPENBSD_8_0
+/drm_hdmi_cec_helper.h/1.1/Mon Mar  9 23:58:03 2026//TOPENBSD_8_0
+/drm_hdmi_helper.h/1.3/Thu Apr 16 18:25:09 2026//TOPENBSD_8_0
+/drm_hdmi_state_helper.h/1.2/Thu Apr 16 18:25:09 2026//TOPENBSD_8_0
+/drm_scdc.h/1.1/Sun Jan  1 01:34:58 2023//TOPENBSD_8_0
+/drm_scdc_helper.h/1.2/Tue Jan 16 23:38:12 2024//TOPENBSD_8_0
+D

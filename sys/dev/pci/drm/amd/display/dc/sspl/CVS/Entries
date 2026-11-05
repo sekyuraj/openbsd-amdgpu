@@ -1,0 +1,18 @@
+/dc_spl.c/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_filters.c/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_filters.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_isharp_filters.c/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_isharp_filters.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_scl_easf_filters.c/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_scl_easf_filters.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_scl_filters.c/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_scl_filters.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/dc_spl_types.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/spl_custom_float.c/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/spl_custom_float.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/spl_debug.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/spl_fixpt31_32.c/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/spl_fixpt31_32.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+/spl_os_types.h/1.1/Mon Mar  9 23:57:59 2026//TOPENBSD_8_0
+D

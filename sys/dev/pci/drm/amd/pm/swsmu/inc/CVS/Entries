@@ -1,0 +1,14 @@
+D/pmfw_if////
+/amdgpu_smu.h/1.8/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_11_0_cdr_table.h/1.2/Tue Jan 16 23:38:07 2024//TOPENBSD_8_0
+/smu_types.h/1.6/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_v11_0.h/1.4/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_v11_0_7_pptable.h/1.1/Sun Jan  1 01:34:53 2023//TOPENBSD_8_0
+/smu_v11_0_pptable.h/1.2/Tue Jan 16 23:38:07 2024//TOPENBSD_8_0
+/smu_v12_0.h/1.2/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_v13_0.h/1.11/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_v13_0_0_pptable.h/1.1/Mon Mar  9 23:58:01 2026//TOPENBSD_8_0
+/smu_v13_0_7_pptable.h/1.2/Tue Jan 16 23:38:07 2024//TOPENBSD_8_0
+/smu_v13_0_pptable.h/1.1/Sun Jan  1 01:34:53 2023//TOPENBSD_8_0
+/smu_v14_0.h/1.2/Thu Apr 16 18:25:08 2026//TOPENBSD_8_0
+/smu_v14_0_2_pptable.h/1.1/Fri Feb  7 03:03:28 2025//TOPENBSD_8_0

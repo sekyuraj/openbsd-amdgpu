@@ -1,0 +1,75 @@
+D/basics////
+D/bios////
+D/clk_mgr////
+D/core////
+D/dccg////
+D/dce////
+D/dce110////
+D/dce112////
+D/dce120////
+D/dce60////
+D/dce80////
+D/dcn10////
+D/dcn20////
+D/dcn201////
+D/dcn21////
+D/dcn30////
+D/dcn301////
+D/dcn31////
+D/dio////
+D/dml////
+D/dml2////
+D/dpp////
+D/dsc////
+D/dwb////
+D/gpio////
+D/hdcp////
+D/hpo////
+D/hubbub////
+D/hubp////
+D/hwss////
+D/inc////
+D/irq////
+D/link////
+D/mmhubbub////
+D/mpc////
+D/opp////
+D/optc////
+D/pg////
+D/resource////
+D/virtual////
+D/soc_and_ip_translator////
+D/sspl////
+/dc.h/1.23/Mon Sep 28 15:25:05 2026//TOPENBSD_8_0
+/dc_bios_types.h/1.8/Fri Feb  7 03:03:10 2025//TOPENBSD_8_0
+/dc_ddc_types.h/1.4/Tue Jan 16 23:37:56 2024//TOPENBSD_8_0
+/dc_dmub_srv.c/1.11/Mon Sep 28 15:25:05 2026//TOPENBSD_8_0
+/dc_dmub_srv.h/1.8/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_dp_types.h/1.12/Mon Sep 28 15:25:05 2026//TOPENBSD_8_0
+/dc_dsc.h/1.8/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_edid_parser.c/1.1/Fri Jan 14 06:53:01 2022//TOPENBSD_8_0
+/dc_edid_parser.h/1.1/Fri Jan 14 06:53:01 2022//TOPENBSD_8_0
+/dc_fused_io.c/1.1/Mon Mar  9 23:57:54 2026//TOPENBSD_8_0
+/dc_fused_io.h/1.1/Mon Mar  9 23:57:54 2026//TOPENBSD_8_0
+/dc_hdmi_types.h/1.2/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_helper.c/1.9/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_hw_types.h/1.12/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_plane.h/1.2/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_plane_priv.h/1.1/Fri Feb  7 03:03:10 2025//TOPENBSD_8_0
+/dc_spl_translate.c/1.2/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_spl_translate.h/1.1/Fri Feb  7 03:03:10 2025//TOPENBSD_8_0
+/dc_stat.h/1.1/Fri Jan 14 06:53:01 2022//TOPENBSD_8_0
+/dc_state.h/1.2/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_state_priv.h/1.2/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_stream.h/1.12/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dc_stream_priv.h/1.1/Fri Feb  7 03:03:10 2025//TOPENBSD_8_0
+/dc_trace.h/1.2/Tue Jan 16 23:37:56 2024//TOPENBSD_8_0
+/dc_types.h/1.14/Mon Sep 28 15:25:05 2026//TOPENBSD_8_0
+/dm_cp_psp.h/1.5/Fri Feb  7 03:03:10 2025//TOPENBSD_8_0
+/dm_event_log.h/1.1/Mon Jun  8 04:48:00 2020//TOPENBSD_8_0
+/dm_helpers.h/1.9/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dm_pp_smu.h/1.5/Fri Feb  7 03:03:10 2025//TOPENBSD_8_0
+/dm_services.h/1.8/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/dm_services_types.h/1.4/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/irq_types.h/1.6/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
+/os_types.h/1.8/Thu Apr 16 18:25:04 2026//TOPENBSD_8_0
